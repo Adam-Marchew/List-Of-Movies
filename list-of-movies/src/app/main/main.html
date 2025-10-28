@@ -3,22 +3,26 @@
         <div class="form-check form-switch form-check-inline p-3 ms-2">
             <input (click)="selectionAll()" class="form-check-input" type="checkbox" role="switch" id="switchAll" [(ngModel)]="isCheckedAll" clickable>
             <label for="switchAll">All</label>
-            {{ isCheckedAll ? 'On' : 'Off'}}
         </div>
         <div class="form-check form-switch form-check-inline p-3 ms-2">
             <input (click)="selectionSF()" class="form-check-input" type="checkbox" role="switch" id="switchSF" [(ngModel)]="isCheckedSF" clickable>
             <label for="switchSF">Science Fiction</label>
-            {{ isCheckedSF ? 'On' : 'Off'}}
         </div>
         <div class="form-check form-switch form-check-inline p-3 ms-2">
             <input (click)="selectionRomance()" class="form-check-input" type="checkbox" role="switch" id="switchRomance" [(ngModel)]="isCheckedRomance" clickable>
             <label for="switchRomance">Romance</label>
-            {{ isCheckedRomance ? 'On' : 'Off'}}
         </div>
         <div class="form-check form-switch form-check-inline p-3 ms-2">
             <input (click)="selectionAnime()" class="form-check-input" type="checkbox" role="switch" id="switchAnime" [(ngModel)]="isCheckedAnime" clickable>
             <label for="switchAnime">Anime</label>
-            {{ isCheckedAnime ? 'On' : 'Off'}}
+        </div>
+        <div class="form-check form-switch form-check-inline p-3 ms-2">
+            <input (click)="selectionHistory()" class="form-check-input" type="checkbox" role="switch" id="switchHistory" [(ngModel)]="isCheckedHistory" clickable>
+            <label for="switchHistory">History</label>
+        </div>
+        <div class="form-check form-switch form-check-inline p-3 ms-2">
+            <input (click)="selectionHorror()" class="form-check-input" type="checkbox" role="switch" id="switchHorror" [(ngModel)]="isCheckedHorror" clickable>
+            <label for="switchHorror">Horror</label>
         </div>
     </div>
     <div>
