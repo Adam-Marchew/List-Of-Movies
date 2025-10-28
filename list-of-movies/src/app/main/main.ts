@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './main.css',
 })
 export class Main {
-  
+
   isCheckedAll: boolean = true;
   isCheckedSF: boolean = false;
   isCheckedRomance: boolean = false;
@@ -17,6 +17,8 @@ export class Main {
   isHiddenSF: boolean = false;
   isHiddenAnime: boolean = false;
   isHiddenRomance: boolean = false;
+  isHiddenHistory: boolean = false;
+  isHiddenHorror: boolean = false;
 
   selectionAll(){
     
