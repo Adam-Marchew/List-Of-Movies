@@ -1,21 +1,29 @@
 <main class="border">
     <div class="border text-center">
         <div class="form-check form-switch form-check-inline p-3 ms-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="switchSF">
+            <input (click)="selectionAll()" class="form-check-input" type="checkbox" role="switch" id="switchAll" [(ngModel)]="isCheckedAll" clickable>
+            <label for="switchAll">All</label>
+            {{ isCheckedAll ? 'On' : 'Off'}}
+        </div>
+        <div class="form-check form-switch form-check-inline p-3 ms-2">
+            <input (click)="selectionSF()" class="form-check-input" type="checkbox" role="switch" id="switchSF" [(ngModel)]="isCheckedSF" clickable>
             <label for="switchSF">Science Fiction</label>
+            {{ isCheckedSF ? 'On' : 'Off'}}
         </div>
         <div class="form-check form-switch form-check-inline p-3 ms-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="switchRomance">
+            <input (click)="selectionRomance()" class="form-check-input" type="checkbox" role="switch" id="switchRomance" [(ngModel)]="isCheckedRomance" clickable>
             <label for="switchRomance">Romance</label>
+            {{ isCheckedRomance ? 'On' : 'Off'}}
         </div>
         <div class="form-check form-switch form-check-inline p-3 ms-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="switchAnime">
+            <input (click)="selectionAnime()" class="form-check-input" type="checkbox" role="switch" id="switchAnime" [(ngModel)]="isCheckedAnime" clickable>
             <label for="switchAnime">Anime</label>
+            {{ isCheckedAnime ? 'On' : 'Off'}}
         </div>
     </div>
     <div>
-        <img src="Jujustu-kaisen.png" alt="image from pinderest">
-        <img src="Star-wars-AF.png" alt="image from pinderest">
-        <img src="Lalaland.png" alt="image from pinderest">
+        <img [hidden]="isHiddenAnime" src="Jujustu-kaisen.png" alt="image from pinderest">
+        <img [hidden]="isHiddenSF" src="Star-wars-AF.png" alt="image from pinderest">
+        <img [hidden]="isHiddenRomance" src="Lalaland.png" alt="image from pinderest">
     </div>
 </main>
